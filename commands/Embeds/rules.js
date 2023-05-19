@@ -13,7 +13,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setTitle(`${message.guild.name} - Server Rules`)
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
-            .addLine("Rule 1", 'Test')
+            .addField("Rule 1", 'Test')
            
     }
 }
