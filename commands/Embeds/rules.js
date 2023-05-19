@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const colors = require('../../colors.json')
 
 module.exports = {
     name: 'rules',
@@ -12,6 +13,7 @@ module.exports = {
 
         const embed = new Discord.MessageEmbed()
             .setTitle(`${message.guild.name} - Server Rules`)
+            .setColor(colors.MUSIC)
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
             .addField("Rule 1", 'Test')
         
