@@ -11,7 +11,7 @@ require('console-stamp')(console, {
 })
 
 bot.setMaxListeners(0);
-bot.categories = fs.readdirSync("./commands/");
+bot.categories = fs.readdirSync('./');
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 bot.events = new Discord.Collection();
