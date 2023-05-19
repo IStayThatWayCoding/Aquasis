@@ -14,6 +14,8 @@ module.exports = {
             .setTitle(`${message.guild.name} - Server Rules`)
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
             .addField("Rule 1", 'Test')
+        
+        message.channel.send(embed)
            
     }
 }
