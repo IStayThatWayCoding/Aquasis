@@ -47,8 +47,10 @@ module.exports = {
                 { name: "Rule 11", value: "Ban evasion and mute evasion are **__not allowed__**. If you are caught doing this, your main account's punishment will be extended."},
                 { name: "Rule 12", value: "Do not discuss or ask about other members' punishments, and don't ping or make fun of those that are muted (other people’s bans, mutes, etc.)"},
                 { name: "Rule 13", value: "Make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click)."},
-                { name: "Rule 14", value: "These rules are not exhaustive, if a staff member tells you not to do something, listen to them. If you want more clarification, or think something is wrong, please open a ticket in <#903739112027197441>. Also, if you want to report someone for breaking rules, open a ticket!"},
+                { name: "Rule 14", value: "These rules are not exhaustive, if a staff member tells you not to do something, listen to them. If you want more clarification, or think something is wrong, please open a ticket in <#903739112027197441>.\n Also, if you want to report someone for breaking rules, open a ticket!"},
+                { name: "Important Links", value: "[Get Roles](https://discord.com/channels/755968485854675065/903524741791506432/903759194941968414) [Take a look at the FAQ](https://discord.com/channels/755968485854675065/903762303026085939) [Chat!](https://discord.com/channels/755968485854675065/903516143715778590)"}
             )
+            .setFooter('')
 
         
         message.channel.send(embed)
