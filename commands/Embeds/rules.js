@@ -118,9 +118,9 @@ module.exports = {
             ]
         }).then(message.channel.send(rule1embed))
 
-        await message.channel.send(rule2embed)
-        await message.channel.send(rule3embed)
-        await message.channel.send(rule4embed)
+        .then(message.channel.send(rule2embed))
+        .then(await message.channel.send(rule3embed))
+        .then(await message.channel.send(rule4embed))
         // message.channel.send(rule5embed)
         // message.channel.send(rule6embed)
         // message.channel.send(rule7embed)
