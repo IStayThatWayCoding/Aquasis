@@ -48,7 +48,7 @@ module.exports = {
         //     .addField("Rule 13", '')
 
         const welcomeembed = new Discord.MessageEmbed()
-        .setAuthor('Welcome!', 'https://i.imgur.com/xJAnTEZ.png')
+        .setAuthor('Welcome!', 'https://i.imgur.com/z3Ppq8B.png')
         .setColor(colors.TRANSPARENT)
         .setDescription("Welcome to **Oasis's (Swiftblade's)** Official Discord Server! Please ensure that you follow these simple rules.\n\nPlease keep this server to English & Spanish only. For other languages, use <#1109567902882992138> ONLY.")
 
@@ -120,7 +120,7 @@ module.exports = {
         const infoembed = new Discord.MessageEmbed()
         .setAuthor('Information', 'https://i.imgur.com/jn8YaUK.png')
         .setColor(colors.TRANSPARENT)
-        .setDescription('If you wish to report a member for breaking one of these rules, please feel free to create a ticket in <#903739112027197441>!\nThese rules are not exhaustive, if a staff member tells you not to do something, listen to them. If you want more clarification, or think something is wrong, please open a ticket in <#903739112027197441>.\n\nClick: [Get Roles](https://discord.com/channels/755968485854675065/903524741791506432/903759194941968414) **|** [FAQ](https://discord.com/channels/755968485854675065/903762303026085939) **|** [Chat](https://discord.com/channels/755968485854675065/903516143715778590) **|** [Suggest Aquasis Bot Changes](https://discord.com/channels/755968485854675065/1006651258280624230)')
+        .setDescription('If you wish to report a member for breaking one of these rules, please feel free to create a ticket in <#903739112027197441>!\n\nThese rules are not exhaustive, if a staff member tells you not to do something, listen to them. If you want more clarification, or think something is wrong, please open a ticket in <#903739112027197441>.\n\nClick: [Get Roles](https://discord.com/channels/755968485854675065/903524741791506432/903759194941968414) **|** [FAQ](https://discord.com/channels/755968485854675065/903762303026085939) **|** [Chat](https://discord.com/channels/755968485854675065/903516143715778590) **|** [Suggest Aquasis Bot Changes](https://discord.com/channels/755968485854675065/1006651258280624230)')
         .setFooter('Aquasis | Developed with ❤️ by istay#5154')
         
         message.channel.send({
