@@ -44,7 +44,7 @@ module.exports = {
         //     .addField("Rule 13", '')
 
         const rule1embed = new Discord.MessageEmbed()
-        .setImage('https://i.imgur.com/LuTh0jv.jpg')
+        .setAuthor('Rule 1', 'https://i.imgur.com/LuTh0jv.jpg')
         .setColor(colors.TRANSPARENT)
         .setDescription(rule1)
 
