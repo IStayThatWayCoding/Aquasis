@@ -9,12 +9,12 @@ module.exports = {
     category: 'Information',
     timeout: 5000,
     description: 'Gives specific information on a specific function of the server',
-    usage: `info <levels, roles, oasis, aquasis>`,
+    usage: `info <levels, roles, oasis, aquasis, content-creator>`,
     run: async (bot, message, args) => {
-        let usage = `${config.prefix}info <levels, roles, oasis, aquasis, rings>`
+        let usage = `${config.prefix}info <levels, roles, oasis, aquasis, rings, content-creator>`
 
         if(!args[0]) return message.channel.send(`Invalid Syntax. \`${usage}\``);
-        if(!['levels', 'roles', 'oasis', 'aquasis', 'rings'].includes(args[0])) return message.channel.send(`Invalid Argument/Syntax. \`${usage}\``);
+        if(!['levels', 'roles', 'oasis', 'aquasis', 'rings', 'content-creator'].includes(args[0])) return message.channel.send(`Invalid Argument/Syntax. \`${usage}\``);
         if(args[0] == 'levels'){
             let embed = new Discord.MessageEmbed()
             .setTitle(`${message.guild.name} - Level System`)
