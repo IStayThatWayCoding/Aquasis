@@ -116,7 +116,7 @@ module.exports = {
             files: [
                 './embed.png'
             ]
-        }).then(await message.channel.send(rule1embed))
+        }).then(message.channel.send(rule1embed))
 
         await message.channel.send(rule2embed)
         await message.channel.send(rule3embed)
