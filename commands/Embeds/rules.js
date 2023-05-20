@@ -58,9 +58,71 @@ module.exports = {
         .setColor(colors.RULESEMBED)
         .setDescription(rule3)
 
+        const rule4embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 4', 'https://i.imgur.com/fyyhitM.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule4)
+        
+        const rule5embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 5', 'https://i.imgur.com/V8HGI92.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule5)
+        
+        const rule6embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 6', 'https://i.imgur.com/DADmfaU.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule6)
+        
+        const rule7embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 7', 'https://i.imgur.com/Ydz2tUy.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule7)
+        
+        const rule8embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 8', 'https://i.imgur.com/fRZznc4.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule8)
+        
+        const rule9embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 9', 'https://i.imgur.com/rb8tUoA.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule9)
+        
+        const rule10embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 10', 'https://i.imgur.com/zewbedC.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule10)
+        
+        const rule11embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 11', 'https://i.imgur.com/E77a9nu.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule11)
+        
+        const rule12embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 12', 'https://i.imgur.com/frzALHM.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule12)
+        
+        const rule13embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 13', 'https://i.imgur.com/o6VPP4p.jpg')
+        .setColor(colors.RULESEMBED)
+        .setDescription(rule13)
+        
+
+
         message.channel.send(rule1embed)
         message.channel.send(rule2embed)
         message.channel.send(rule3embed)
+        message.channel.send(rule4embed)
+        message.channel.send(rule5embed)
+        message.channel.send(rule6embed)
+        message.channel.send(rule7embed)
+        message.channel.send(rule8embed)
+        message.channel.send(rule9embed)
+        message.channel.send(rule10embed)
+        message.channel.send(rule11embed)
+        message.channel.send(rule12embed)
+        message.channel.send(rule13embed)
            
     }
 }
