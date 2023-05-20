@@ -11,7 +11,7 @@ module.exports = {
     run: async (bot, message, args) => {
         if(!message.member.permissions.has("ADMINISTRATOR")) return;
 
-            let rule1 = "`Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished.`"
+            let rule1 = "Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished."
             let rule2 = "Obey all staff members. Do not argue with staff - their decisions are final. If someone is breaking the rules, __ping a staff member or admin in the channel or dm a mod instead of mini-modding__. Refrain from troll/unnecessary pinging of staff."
             let rule3 = "Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished."
             let rule4 = "Do **__NOT__** post any inappropriate/NSFW content. This includes videos, images, links, emojis, profile pictures, usernames/nicknames, and discussion of overly-sexual content. Be mindful that there are younger members of the discord and that certain conversations may make people uncomfortable."
@@ -44,7 +44,7 @@ module.exports = {
         //     .addField("Rule 13", '')
 
         const rule1embed = new Discord.MessageEmbed()
-        .setTitle('Rule 1')
+        .setThumbnail('https://i.imgur.com/LuTh0jv.jpg')
         .setColor(colors.TRANSPARENT)
         .setDescription(rule1)
 
