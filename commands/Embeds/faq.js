@@ -15,7 +15,7 @@ module.exports = {
         if(!message.member.permissions.has("ADMINISTRATOR")) return;
 
             let faq1 = '**About**\n\nAge: 19\nPronouns: She/Her 🏳️‍⚧️\nFavorite Colors: Pastel blue, pastel pink, sky blue, aqua, and black\nFavorite Music Artist(s): Juice WRLD, The Kid LAROI, Post Malone, Memoria XI, etc.\nFavorite Song: The Kid LAROI - Stay (ft. Justin Bieber)\nFavorite Games: Minecraft, Super Smash Bros. Ultimate, and **TONS of Sonic games.**\nFavorite Theme Song: "Reach For The Stars" from Sonic Colors AND "I\'m Here" from Sonic Frontiers'
-            let faq2 = "**Boundaries**\n\n[⚠️] [**OFFICIAL** Boundaries](https://oasisyt.carrd.co/)"
+            let faq2 = "**Boundaries**\n\n**[⚠️]** [**OFFICIAL** Boundaries](https://oasisyt.carrd.co/)"
             let faq3 = "**Controls/DPI/Sens**\n\nDPI: 400\nMC Sens: 91\nFOV: 70 (1.8) + Dynamic FOV On\nFOV: 90 (1.19) + Dynamic FOV Off\n\n**__Controls:__**\nDrop Item: C\nMove: WASD\nInventory: E\nOptifine/Lunar Zoom: X\nPerspective Mod: ALT\nSprint: CTRL\nOffhand (1.19): V\nThird Person: Side Mouse Button 2\nHotbar: 1 - 5 are defualt\n- 6: Q\n- 7: F\n- 8: R\n- 9: Side Mouse Button 1\n\n(1.7) View Bobbing: Off\n(1.8 & 1.19) View Bobbing: off"
             let faq4 = "**Mouse/Keyboard**\n\nMouse: Logitech G Pro Wireless Superlight\nKeyboard: A custom made keyboard by MinuteTech"
             let faq5 = "**How do I apply for <@&756952143776186460> or <@&896080274134286337> role?**\n\nRun `>info content-creator` in <#903523421042929674> to see info"
@@ -109,7 +109,7 @@ module.exports = {
         
         message.channel.send({
             files: [
-                './FAQoasis.png'
+                './FAQoasis.jpg'
             ]
         })
 
