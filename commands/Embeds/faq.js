@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const colors = require('../../colors.json')
+const config = require('../../config.json')
 const canvas = require('canvas')
 
 

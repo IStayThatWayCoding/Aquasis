@@ -62,7 +62,7 @@ module.exports = {
             .setTitle(`${message.guild.name} - Oasis Information`)
             .setColor(colors.MUSIC)
             .setDescription(`**OASIS INFO**\n\nYouTube Subscribers: ${subCountReal}\nTwitch Followers: ${followerCount}\nOasis's Boundaries: [Click Here](https://oasisyt.carrd.co/#begin)\nMain YouTube: [Click Here](https://www.youtube.com/itsoasis)\nShorts Channel: [Click Here](https://www.youtube.com/channel/UCmyFKHoKqoJCEdi9qWbFORQ)\nMusic Channel: [Click Here](https://www.youtube.com/watch?v=b4hQknmOQWc)\n\nMore information will be here soon. Updates will be posted in the server.`)
-            .setFooter(`Information Cards - Oasis`)
+            .setFooter(`Information Cards - Oasis | ${config.signature}`)
 
             message.channel.send(embed)
         }
@@ -72,7 +72,7 @@ module.exports = {
             .setTitle(`${message.guild.name} - Aquasis`)
             .setColor(colors.MUSIC)
             .setDescription(`Aquasis is a custom-coded bot for **${message.guild.name}**! It has some awesome features to keep the server safe!\n\n**A bit about the developer**\n\nThis bot is completely coded by <@274021702411747328>! IStay has been in this server a day after it was released, as well as being in the **OLD** server! He has been a friend of Oasis's for a long time now! <3 If you are ever having a hard time, his dms are always open to talk <3\n\n**Got suggestions?**\n\nIf you have any suggestions for this bot, leave them in <#1006651258280624230>!\n\n*Note: Please do not consider Aquasis as a scam bot, because it isn't! Aquasis will not ask for any account information or personal information, please watch for the bot tag and custom role icon, only exclusive to the bot itself!*`)
-            .setFooter(`Information Cards - Aquasis`)
+            .setFooter(`Information Cards - Aquasis | ${config.signature}`)
 
             message.channel.send(embed)
         }
@@ -82,6 +82,7 @@ module.exports = {
             .setTitle(`${message.guild.name} - Rings`)
             .setColor(colors.MUSIC)
             .setDescription(`Rings are the server's currency! You earn rings as you chat, or participate in server events! You can check your rings by using the \`>bal\` command!`)
+            .setFooter(`Information Cards - Rings | ${config.signature}`)
 
             message.channel.send(embed)
         }
@@ -90,7 +91,8 @@ module.exports = {
             let embed = new Discord.MessageEmbed()
             .setTitle(`${message.guild.name} - Content Creator Requirements`)
             .setColor(colors.MUSIC)
-            .setDescription('If you are sure you meet the requirements (see <#903524420826591272>), apply by creating a new ticket in <#903739112027197441>\n\n⤷ <@&756952143776186460> role **requirements:**\n- For gaming channels with new Minecraft-focused content.\n- A reasonable number of views per video (500 or more views within a few days of release on all videos).\n- An active YouTube channel producing **__original content__** of a __reasonable quality.__**\n\n⤷ <@&896080274134286337> role **requirements:**\n-  For channels with new - though still some existing - Minecraft-focused content, but frequent gaming-focused content.\n-  A reasonable number of views per video (5000 or more views within a few days of release on all videos).\n- An active YouTube channel producing **__original content__** of a __reasonable quality.__\n\nNote: To be able to apply for either role, you must be a member of the discord server for a minimum of 45 days before applying. Shorts channels are handled on a case by case basis and will require significantly higher requirements than those listed above.\n\n**Please note that channels meeting these requirements are still not guaranteed a role. All creator roles are decided on a case by case basis following reviews and consideration by the administration team, and we may decline giving a rank for any reason.*')
+            .setDescription('If you are sure you meet the requirements (see <#903524420826591272>), apply by creating a new ticket in <#903739112027197441>\n\n**⤷** <@&756952143776186460> role **requirements:**\n- For gaming channels with new Minecraft-focused content.\n- A reasonable number of views per video (500 or more views within a few days of release on all videos).\n- An active YouTube channel producing **__original content__** of a __reasonable quality.__\n\n**⤷** <@&896080274134286337> role **requirements:**\n-  For channels with new - though still some existing - Minecraft-focused content, but frequent gaming-focused content.\n-  A reasonable number of views per video (5000 or more views within a few days of release on all videos).\n- An active YouTube channel producing **__original content__** of a __reasonable quality.__\n\nNote: To be able to apply for either role, you must be a member of the discord server for a minimum of 45 days before applying. Shorts channels are handled on a case by case basis and will require significantly higher requirements than those listed above.\n\n**Please note that channels meeting these requirements are still not guaranteed a role. All creator roles are decided on a case by case basis following reviews and consideration by the administration team, and we may decline giving a rank for any reason.*')
+            .setFooter(`Information Cards - Content Creator | ${config.signature}`)
 
             message.channel.send(embed)
 
