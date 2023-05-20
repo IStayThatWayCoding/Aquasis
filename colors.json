@@ -17,5 +17,6 @@
     "cream": "#ffdab9",
     "MUSIC": "#92cafb",
     "ERROR": "#FF0000",
-    "SUCCESS": "#198754"
+    "SUCCESS": "#198754",
+    "TRANSPARENT": "#36393F"
   }

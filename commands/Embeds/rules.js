@@ -11,6 +11,20 @@ module.exports = {
     run: async (bot, message, args) => {
         if(!message.member.permissions.has("ADMINISTRATOR")) return;
 
+            let rule1 = "`Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished.`"
+            let rule2 = "Obey all staff members. Do not argue with staff - their decisions are final. If someone is breaking the rules, __ping a staff member or admin in the channel or dm a mod instead of mini-modding__. Refrain from troll/unnecessary pinging of staff."
+            let rule3 = "Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished."
+            let rule4 = "Do **__NOT__** post any inappropriate/NSFW content. This includes videos, images, links, emojis, profile pictures, usernames/nicknames, and discussion of overly-sexual content. Be mindful that there are younger members of the discord and that certain conversations may make people uncomfortable."
+            let rule5 = "Do not dox or post any irl personal information about anyone, or post any unsafe links such as IP grabbers or scams. **(Doing so will get you immediately banned from the server.)**"
+            let rule6 = "Do not spam in channels and don't spam/mass ping people unnecessarily, especially other creators. **Do not ping Oasis (Swiftblade)** for any reason either (this also includes trying to @/everyone and spam reacting). "
+            let rule7 = "Use the text channels in their correct use. For example, only use bot commands in <#903523421042929674>"
+            let rule8 = "Do not discuss topics that tend to make people uncomfortable. This includes topics such as self-harm, intense political discussions and beliefs that would offend people, and extreme over-sexualization of individuals. This also applies to cheats/hack client naming for Minecraft, and other illegal practices such as account trading, etc."
+            let rule9 = "Do not be disruptive in voice channels. This includes spam hopping channels, being excessively loud/annoying, and playing soundboards."
+            let rule10 = "Use common sense! (Do not advertise/self promote, try and find loopholes, joke about being under 13, purposely confusing/upsetting others, etc.) "
+            let rule11 = "Ban evasion and mute evasion are **__not allowed__**. If you are caught doing this, your main account's punishment will be extended."
+            let rule12 = "Do not discuss or ask about other members' punishments, and don't ping or make fun of those that are muted (other people’s bans, mutes, etc.)"
+            let rule13 = "Make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click)."
+
         // const embed = new Discord.MessageEmbed()
         //     .setTitle(`${message.guild.name} - Server Rules`)
         //     .setColor(colors.MUSIC)
@@ -29,31 +43,18 @@ module.exports = {
         //     .addField("Rule 12", '')
         //     .addField("Rule 13", '')
 
-        const embed = new Discord.MessageEmbed()
-            .setTitle(`${message.guild.name} - Server Rules`)
-            .setColor(colors.MUSIC)
-            .setThumbnail(message.guild.iconURL({ dynamic: true }))
-            .addFields(
-                { name: "Rule 1", value: "`Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished.`"},
-                { name: "Rule 2", value: "Obey all staff members. Do not argue with staff - their decisions are final. If someone is breaking the rules, __ping a staff member or admin in the channel or dm a mod instead of mini-modding__. Refrain from troll/unnecessary pinging of staff."},
-                { name: "Rule 3", value: "Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished."},
-                { name: "Rule 4", value: "Do **__NOT__** post any inappropriate/NSFW content. This includes videos, images, links, emojis, profile pictures, usernames/nicknames, and discussion of overly-sexual content. Be mindful that there are younger members of the discord and that certain conversations may make people uncomfortable."},
-                { name: "Rule 5", value: "Do not dox or post any irl personal information about anyone, or post any unsafe links such as IP grabbers or scams. **(Doing so will get you immediately banned from the server.)**"},
-                { name: "Rule 6", value: "Do not spam in channels and don't spam/mass ping people unnecessarily, especially other creators. **Do not ping Oasis (Swiftblade)** for any reason either (this also includes trying to @/everyone and spam reacting). "},
-                { name: "Rule 7", value: "Use the text channels in their correct use. For example, only use bot commands in <#903523421042929674>"},
-                { name: "Rule 8", value: "Do not discuss topics that tend to make people uncomfortable. This includes topics such as self-harm, intense political discussions and beliefs that would offend people, and extreme over-sexualization of individuals. This also applies to cheats/hack client naming for Minecraft, and other illegal practices such as account trading, etc."},
-                { name: "Rule 9", value: "Do not be disruptive in voice channels. This includes spam hopping channels, being excessively loud/annoying, and playing soundboards."},
-                { name: "Rule 10", value: "Use common sense! (Do not advertise/self promote, try and find loopholes, joke about being under 13, purposely confusing/upsetting others, etc.) "},
-                { name: "Rule 11", value: "Ban evasion and mute evasion are **__not allowed__**. If you are caught doing this, your main account's punishment will be extended."},
-                { name: "Rule 12", value: "Do not discuss or ask about other members' punishments, and don't ping or make fun of those that are muted (other people’s bans, mutes, etc.)"},
-                { name: "Rule 13", value: "Make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click)."},
-                { name: "Rule 14", value: "These rules are not exhaustive, if a staff member tells you not to do something, listen to them. If you want more clarification, or think something is wrong, please open a ticket in <#903739112027197441>.\n Also, if you want to report someone for breaking rules, open a ticket!"},
-                { name: "Important Links", value: "[Get Roles](https://discord.com/channels/755968485854675065/903524741791506432/903759194941968414) [Take a look at the FAQ](https://discord.com/channels/755968485854675065/903762303026085939) [Chat!](https://discord.com/channels/755968485854675065/903516143715778590)"}
-            )
-            .setFooter('')
+        const rule1embed = new Discord.MessageEmbed()
+        .setTitle('Rule 1')
+        .setColor(colors.TRANSPARENT)
+        .setDescription(rule1)
 
-        
-        message.channel.send(embed)
+        const rule2embed = new Discord.MessageEmbed()
+        .setTitle('Rule 2')
+        .setColor(colors.TRANSPARENT)
+        .setDescription(rule2)
+
+        message.channel.send(rule1embed)
+        message.channel.send(rule2embed)
            
     }
 }
