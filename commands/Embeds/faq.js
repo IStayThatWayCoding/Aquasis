@@ -59,52 +59,52 @@ module.exports = {
         const faq6embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 6', 'https://i.imgur.com/DADmfaU.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule6)
+        .setDescription(faq6)
         
         const faq7embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 7', 'https://i.imgur.com/Ydz2tUy.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule7)
+        .setDescription(faq7)
         
         const faq8embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 8', 'https://i.imgur.com/fRZznc4.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule8)
+        .setDescription(faq8)
         
         const faq9embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 9', 'https://i.imgur.com/rb8tUoA.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule9)
+        .setDescription(faq9)
         
         const faq10embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 10', 'https://i.imgur.com/zewbedC.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule10)
+        .setDescription(faq10)
         
         const faq11embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 11', 'https://i.imgur.com/E77a9nu.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule11)
+        .setDescription(faq11)
         
         const faq12embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 12', 'https://i.imgur.com/frzALHM.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule12)
+        .setDescription(faq12)
         
         const faq13embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 13', 'https://i.imgur.com/o6VPP4p.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule13)
+        .setDescription(faq13)
 
         const faq14embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 14', 'https://i.imgur.com/fDExAHO.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule14)
+        .setDescription(faq14)
 
         const faq15embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 15', 'https://i.imgur.com/mcNsSUp.jpg')
         .setColor(colors.RULESEMBED)
-        .setDescription(rule15)
+        .setDescription(faq15)
 
         
         message.channel.send({
