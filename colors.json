@@ -18,5 +18,6 @@
     "MUSIC": "#92cafb",
     "ERROR": "#FF0000",
     "SUCCESS": "#198754",
-    "TRANSPARENT": "#2f3136"
+    "TRANSPARENT": "#2f3136",
+    "RULESEMBED": "#357A7B"
   }

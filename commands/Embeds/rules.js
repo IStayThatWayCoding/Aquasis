@@ -45,17 +45,17 @@ module.exports = {
 
         const rule1embed = new Discord.MessageEmbed()
         .setAuthor('Rule 1', 'https://i.imgur.com/ExVt149.jpg')
-        .setColor(colors.TRANSPARENT)
+        .setColor(colors.RULESEMBED)
         .setDescription(rule1)
 
         const rule2embed = new Discord.MessageEmbed()
         .setAuthor('Rule 2', 'https://i.imgur.com/i00Y6On.jpg')
-        .setColor(colors.TRANSPARENT)
+        .setColor(colors.RULESEMBED)
         .setDescription(rule2)
 
         const rule3embed = new Discord.MessageEmbed()
         .setAuthor('Rule 3', 'https://i.imgur.com/QBTM5e0.jpg')
-        .setColor(colors.TRANSPARENT)
+        .setColor(colors.RULESEMBED)
         .setDescription(rule3)
 
         message.channel.send(rule1embed)
