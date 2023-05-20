@@ -23,7 +23,7 @@ module.exports = {
             let rule10 = "Use common sense! (Do not advertise/self promote, try and find loopholes, joke about being under 13, purposely confusing/upsetting others, etc.) "
             let rule11 = "Ban evasion and mute evasion are **__not allowed__**. If you are caught doing this, your main account's punishment will be extended."
             let rule12 = "Do not discuss or ask about other members' punishments, and don't ping or make fun of those that are muted (other people’s bans, mutes, etc.)"
-            let rule13 = "Make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click)."
+            let rule13 = "Please make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click). Failure to comply to these terms may get your account terminated!"
 
         // const embed = new Discord.MessageEmbed()
         //     .setTitle(`${message.guild.name} - Server Rules`)
