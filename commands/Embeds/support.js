@@ -5,7 +5,7 @@ const canvas = require('canvas')
 
 
 module.exports = {
-    name: 'support',
+    name: 'supportembed',
     aliases: [''],
     category: 'Embeds',
     timeout: 5000,
@@ -25,6 +25,7 @@ module.exports = {
         let embed3 = new Discord.MessageEmbed()
         .setColor(colors.green_light)
         .setDescription('Before opening a ticket, please review the information above. \n\n✅ - To open a ticket, click the "📩 Create ticket" button below!')
+        .setFooter(config.signature)
 
         message.channel.send({
             files: [
