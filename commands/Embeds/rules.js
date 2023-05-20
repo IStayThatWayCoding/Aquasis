@@ -47,6 +47,11 @@ module.exports = {
         //     .addField("Rule 12", '')
         //     .addField("Rule 13", '')
 
+        const welcomeembed = new Discord.MessageEmbed()
+        .setAuthor('Welcome!', 'https://i.imgur.com/xJAnTEZ.png')
+        .setColor(colors.TRANSPARENT)
+        .setDescription("Welcome to **Oasis's (Swiftblade's)** Official Discord Server! Please ensure that you follow these simple rules.\n\nPlease keep this server to English & Spanish only. For other languages, use <#1109567902882992138> ONLY.")
+
         const rule1embed = new Discord.MessageEmbed()
         .setAuthor('Rule 1', 'https://i.imgur.com/ExVt149.jpg')
         .setColor(colors.RULESEMBED)
@@ -125,6 +130,7 @@ module.exports = {
         })
 
         setTimeout(function(){
+            message.channel.send(welcomeembed)
             message.channel.send(rule1embed)
             message.channel.send(rule2embed)
             message.channel.send(rule3embed)
