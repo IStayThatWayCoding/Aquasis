@@ -49,7 +49,7 @@ module.exports = {
         .setDescription(rule1)
 
         const rule2embed = new Discord.MessageEmbed()
-        .setTitle('Rule 2')
+        .setAuthor(' ', 'https://i.imgur.com/LuTh0jv.jpg')
         .setColor(colors.TRANSPARENT)
         .setDescription(rule2)
 
