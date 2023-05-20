@@ -20,7 +20,7 @@ module.exports = {
 
         let embed2 = new Discord.MessageEmbed()
         .setColor(colors.red_light)
-        .setDescription('**IMPORTANT**\n\n**__Alright, so nothing is working, and I need help. What do I do?__** - If the above solution(s) have not worked for you, DM @istay#5154 (bot developer) and we will get things solved for you! **DO NOT DM OTHER MEMBERS FOR HELP!')
+        .setDescription('**IMPORTANT**\n\n**__Alright, so nothing is working, and I need help. What do I do?__** - If the above solution(s) have not worked for you, DM <@274021702411747328> (bot developer) and we will get things solved for you!\n\n**DO NOT DM OTHER MEMBERS FOR HELP!**')
         .setFooter(config.signature)
 
         message.channel.send({
