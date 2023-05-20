@@ -62,7 +62,7 @@ module.exports = {
             .setTitle(`${message.guild.name} - Oasis Information`)
             .setColor(colors.MUSIC)
             .setDescription(`**OASIS INFO**\n\nYouTube Subscribers: ${subCountReal}\nTwitch Followers: ${followerCount}\nOasis's Boundaries: [Click Here](https://oasisyt.carrd.co/#begin)\nMain YouTube: [Click Here](https://www.youtube.com/itsoasis)\nShorts Channel: [Click Here](https://www.youtube.com/channel/UCmyFKHoKqoJCEdi9qWbFORQ)\nMusic Channel: [Click Here](https://www.youtube.com/watch?v=b4hQknmOQWc)\n\nMore information will be here soon. Updates will be posted in the server.`)
-            .setFooter(`Information Cards - Oasis | ${config.signature}`)
+            .setFooter(`Information Cards - Oasis **|** ${config.signature}`)
 
             message.channel.send(embed)
         }
