@@ -111,7 +111,11 @@ module.exports = {
         .setDescription(rule13)
         
 
-        message.channel.send(new Discord.Attachment('../../image.png'))
+        message.channel.send({
+            files: [
+                '../../image.png'
+            ]
+        })
         message.channel.send(rule1embed)
         message.channel.send(rule2embed)
         message.channel.send(rule3embed)
