@@ -105,6 +105,7 @@ module.exports = {
         .setAuthor('FAQ 15', 'https://i.imgur.com/mcNsSUp.jpg')
         .setColor(colors.RULESEMBED)
         .setDescription(faq15)
+        .setFooter(config.signature)
 
         
         message.channel.send({
