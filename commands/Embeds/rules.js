@@ -25,6 +25,8 @@ module.exports = {
             let rule12 = "Do not discuss or ask about other members' punishments, and don't ping or make fun of those that are muted (other people’s bans, mutes, etc.)"
             let rule13 = "Please make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click). Failure to comply to these terms may get your account terminated!"
 
+
+            let banner = 'https://i.imgur.com/O2wid2y.png'
         // const embed = new Discord.MessageEmbed()
         //     .setTitle(`${message.guild.name} - Server Rules`)
         //     .setColor(colors.MUSIC)
@@ -109,7 +111,7 @@ module.exports = {
         .setDescription(rule13)
         
 
-
+        message.channel.send(banner)
         message.channel.send(rule1embed)
         message.channel.send(rule2embed)
         message.channel.send(rule3embed)
