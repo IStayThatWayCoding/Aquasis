@@ -26,7 +26,7 @@ module.exports = {
             let rule13 = "Please make sure you follow the [Discord TOS](https://discord.com/terms) (Click) and [Community Guidelines](https://discord.com/guidelines) (Click). Failure to comply to these terms may get your account terminated!"
 
 
-            let banner = 'https://i.imgur.com/O2wid2y.png'
+            let banner = 'https://media.discordapp.net/attachments/903543603589173249/1109559261572382800/image.png'
         // const embed = new Discord.MessageEmbed()
         //     .setTitle(`${message.guild.name} - Server Rules`)
         //     .setColor(colors.MUSIC)
