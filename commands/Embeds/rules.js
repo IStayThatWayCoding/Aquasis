@@ -113,7 +113,7 @@ module.exports = {
 
         message.channel.send({
             files: [
-                '../../image.png'
+                './image.png'
             ]
         })
         message.channel.send(rule1embed)
