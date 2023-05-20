@@ -30,9 +30,9 @@ module.exports = async (bot) => {
     // ]
 
     const activities = [
-        'December 3rd...',
+        'for >info',
         "for >help",
-        "I Mastered EVERY Clutch in Minecraft",
+        "videos",
         `about ${kFormatter1(guildMemberCount)}+ members`,
     ]
 
