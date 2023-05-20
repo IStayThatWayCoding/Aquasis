@@ -1,5 +1,7 @@
 const Discord = require('discord.js')
 const colors = require('../../colors.json')
+const canvas = require('canvas')
+
 
 module.exports = {
     name: 'rules',
@@ -110,12 +112,8 @@ module.exports = {
         .setColor(colors.RULESEMBED)
         .setDescription(rule13)
         
-
-        message.channel.send({
-            files: [
-                './image.png'
-            ]
-        })
+        const attachment = canvas.loadImage('./embed.png')
+        message.channel.send(attachment)
         message.channel.send(rule1embed)
         message.channel.send(rule2embed)
         message.channel.send(rule3embed)
