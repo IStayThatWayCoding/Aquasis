@@ -112,8 +112,12 @@ module.exports = {
         .setColor(colors.RULESEMBED)
         .setDescription(rule13)
         
-        const attachment = canvas.loadImage('./embed.png')
-        message.channel.send(attachment)
+        message.channel.send({
+            files: [
+                './embed.png'
+            ]
+        })
+
         message.channel.send(rule1embed)
         message.channel.send(rule2embed)
         message.channel.send(rule3embed)
