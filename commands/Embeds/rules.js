@@ -111,6 +111,12 @@ module.exports = {
         .setAuthor('Rule 13', 'https://i.imgur.com/o6VPP4p.jpg')
         .setColor(colors.RULESEMBED)
         .setDescription(rule13)
+
+        const infoembed = new Discord.MessageEmbed()
+        .setAuthor('Information', 'https://i.imgur.com/jn8YaUK.png')
+        .setColor(colors.TRANSPARENT)
+        .setDescription('If you wish to report a member for breaking one of these rules, please feel free to create a ticket in <#903739112027197441>!\nThese rules are not exhaustive, if a staff member tells you not to do something, listen to them. If you want more clarification, or think something is wrong, please open a ticket in <#903739112027197441>.\n\nClick: [Get Roles](https://discord.com/channels/755968485854675065/903524741791506432/903759194941968414) **|** [FAQ](https://discord.com/channels/755968485854675065/903762303026085939) **|** [Chat](https://discord.com/channels/755968485854675065/903516143715778590) **|** [Suggest Aquasis Bot Changes](https://discord.com/channels/755968485854675065/1006651258280624230)')
+        .setFooter('Aquasis | Developed with ❤️ by istay#5154')
         
         message.channel.send({
             files: [
@@ -123,19 +129,21 @@ module.exports = {
             message.channel.send(rule2embed)
             message.channel.send(rule3embed)
             message.channel.send(rule4embed)
+            message.channel.send(rule5embed)
+            message.channel.send(rule6embed)
+            message.channel.send(rule7embed)
+            message.channel.send(rule8embed)
+            message.channel.send(rule9embed)
+            message.channel.send(rule10embed)
+            message.channel.send(rule11embed)
+            message.channel.send(rule12embed)
+            message.channel.send(rule13embed)
+            message.channel.send(infoembed)
         }, 5000)
     
 
 
-        // message.channel.send(rule5embed)
-        // message.channel.send(rule6embed)
-        // message.channel.send(rule7embed)
-        // message.channel.send(rule8embed)
-        // message.channel.send(rule9embed)
-        // message.channel.send(rule10embed)
-        // message.channel.send(rule11embed)
-        // message.channel.send(rule12embed)
-        // message.channel.send(rule13embed)
+
            
     }
 }
