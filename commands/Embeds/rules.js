@@ -49,12 +49,18 @@ module.exports = {
         .setDescription(rule1)
 
         const rule2embed = new Discord.MessageEmbed()
-        .setAuthor('Rule 2', 'https://i.imgur.com/LuTh0jv.jpg')
+        .setAuthor('Rule 2', 'https://i.imgur.com/i00Y6On.jpg')
         .setColor(colors.TRANSPARENT)
         .setDescription(rule2)
 
+        const rule3embed = new Discord.MessageEmbed()
+        .setAuthor('Rule 3', 'https://i.imgur.com/QBTM5e0.jpg')
+        .setColor(colors.TRANSPARENT)
+        .setDescription(rule3)
+
         message.channel.send(rule1embed)
         message.channel.send(rule2embed)
+        message.channel.send(rule3embed)
            
     }
 }
