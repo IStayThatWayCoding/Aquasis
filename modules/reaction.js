@@ -23,14 +23,14 @@ if(message.content == `>reactions`){
     
     const theChannel = message.guild.channels.cache.get('903543603589173249')
     
-    
-    const embed = new MessageEmbed()
+    bot.on('message', async () => {
+        const embed = new MessageEmbed()
         .setColor(colors.TRANSPARENT)
         .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
     
         const reactionMessage = theChannel.send(embed)
     
-        message.reactionMessage.react('🐟')
+        reactionMessage.react('🐟')
         reactionMessage.react('🐬')
         reactionMessage.react('🐳')
         reactionMessage.react('🌊')
@@ -39,6 +39,8 @@ if(message.content == `>reactions`){
         reactionMessage.react('🚨')
         reactionMessage.react('🤖')
         reactionMessage.react('❌')
+    })
+
 }
 
 
