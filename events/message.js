@@ -53,7 +53,7 @@ module.exports = async (bot, message) => {
     autoWarn(bot, message);
     // chatBot(bot, message);
     balanceCheck(bot, message);
-    reactionRoles(bot, message);
+    reactionRoles(message, bot);
     
 
 
