@@ -82,7 +82,7 @@ module.exports = async (bot, message) => {
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 //                                                          REACTION ROLES
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
-    if(command === `${prefix}reactions`){
+    if(cmd === `${prefix}reactions`){
     const he_him = message.guild.roles.cache.get('869924102482325504')
     const she_her = message.guild.roles.cache.get('869923953261547560')
     const they_them = message.guild.roles.cache.get('869924173420572682')
