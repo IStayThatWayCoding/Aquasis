@@ -1,4 +1,4 @@
-const { Collection, MessageEmbed } = require('discord.js');
+const { Collection, MessageEmbed, Discord } = require('discord.js');
 const config = require('../config.json');
 const autoReply = require('../modules/autoReply');
 const autoWarn = require('../modules/autoWarn');
