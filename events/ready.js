@@ -7,6 +7,7 @@ const mongo = require('../utils/mongoose');
 const Canvas = require('canvas');
 const getTwitchFollowers = require('../modules/getTwitchFollowers');
 const chalk = require('chalk')
+const reactions = require('../modules/reactions')
 
 
 
@@ -40,6 +41,7 @@ module.exports = async (bot) => {
     memberCount(bot);
     rank_sort(bot);
     getTwitchFollowers(bot);
+    reactions(bot, reaction, user, message)
 
     Canvas.registerFont("./ulm_grotesk.ttf", { family: "grotesk" });
 

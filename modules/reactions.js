@@ -4,7 +4,7 @@ const config = require('../config.json');
 
 require('dotenv').config()
 
-module.exports = async (bot) => {
+module.exports = async (bot, reaction, user, message) => {
     bot.on('messageReactionAdd', (reaction, user) => {
         console.log("ADD")
     })
