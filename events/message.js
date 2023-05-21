@@ -9,7 +9,6 @@ const Timeout = new Collection();
 const ms = require('ms');
 const fs = require('fs')
 const colors = require('../colors.json');
-const reactions = require('../modules/reactions')
 
 
 module.exports = async (bot, message, reaction, user) => {
@@ -54,7 +53,6 @@ module.exports = async (bot, message, reaction, user) => {
     autoWarn(bot, message);
     // chatBot(bot, message);
     balanceCheck(bot, message);
-    reactions(bot, message, reaction, user)
     
     
 
