@@ -9,7 +9,6 @@ const Timeout = new Collection();
 const ms = require('ms');
 const fs = require('fs')
 const colors = require('../colors.json');
-const reaction = require('../modules/reaction')
 
 
 module.exports = async (bot, message) => {
