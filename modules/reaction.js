@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const mongo = require('../utils/mongoose');
 const rankSchema = require('../schemas/rank_schem');
 const path = require('path');
