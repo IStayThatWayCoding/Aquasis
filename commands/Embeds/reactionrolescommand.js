@@ -26,7 +26,7 @@ module.exports = {
         })
 
         setTimeout(function(){
-            message.channel.send(embed1)
+            message.channel.send(embed)
         }, 5000)
     
 
