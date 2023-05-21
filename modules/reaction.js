@@ -12,6 +12,7 @@ console.log('test')
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 //                                                          REACTION ROLES
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
+if(message.content == `>reactions`){
     const he_him = message.guild.roles.cache.get('869924102482325504')
     const she_her = message.guild.roles.cache.get('869923953261547560')
     const they_them = message.guild.roles.cache.get('869924173420572682')
@@ -38,7 +39,7 @@ console.log('test')
         reactionMessage.react('🚨')
         reactionMessage.react('🤖')
         reactionMessage.react('❌')
-    }
+    }}
 
 
     
