@@ -67,10 +67,31 @@ module.exports = async (bot, message) => {
 
     let command = bot.commands.get(cmd);
     if (!command) command = bot.commands.get(bot.aliases.get(cmd));
+
+
+    }
+
+    if (command) {
+        if(command.timeout) {
+
+            if(Timeout.has(`${command.name}${message.author.id}`)){
+                let embed = new MessageEmbed()
+                .setDescription(`You are on a \`${ms(Timeout.get(`${command.name}${message.author.id}`) - Date.now(), {long: true})}\` cooldown.`)
+                .setColor('#fcba03')
+                return message.channel.send(embed)
+            }
+            command.run(bot, message, args);
+            Timeout.set(`${command.name}${message.author.id}`, Date.now() + command.timeout)
+            if(message.member.roles.cache.has(config.staffRole)) Timeout.delete(`${command.name}${message.author.id}`)
+            setTimeout(() => {
+                Timeout.delete(`${command.name}${message.author.id}`)
+            }, command.timeout)
+        }
+
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 //                                                          REACTION ROLES
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
-    if(message.content == `${prefix}reactions`){
+if(message.content == `${prefix}reactions`){
     const he_him = message.guild.roles.cache.get('869924102482325504')
     const she_her = message.guild.roles.cache.get('869923953261547560')
     const they_them = message.guild.roles.cache.get('869924173420572682')
@@ -146,24 +167,6 @@ module.exports = async (bot, message) => {
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 
-    }
-
-    if (command) {
-        if(command.timeout) {
-
-            if(Timeout.has(`${command.name}${message.author.id}`)){
-                let embed = new MessageEmbed()
-                .setDescription(`You are on a \`${ms(Timeout.get(`${command.name}${message.author.id}`) - Date.now(), {long: true})}\` cooldown.`)
-                .setColor('#fcba03')
-                return message.channel.send(embed)
-            }
-            command.run(bot, message, args);
-            Timeout.set(`${command.name}${message.author.id}`, Date.now() + command.timeout)
-            if(message.member.roles.cache.has(config.staffRole)) Timeout.delete(`${command.name}${message.author.id}`)
-            setTimeout(() => {
-                Timeout.delete(`${command.name}${message.author.id}`)
-            }, command.timeout)
-        }
         
     }
         
