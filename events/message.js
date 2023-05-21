@@ -34,19 +34,6 @@ module.exports = async (bot, message) => {
         }
         console.log(images)
 
-        if(message.content == 'survey'){
-            return message.reply('https://forms.gle/tvtsT4fGv1oNBrqJ8')
-        }
-
-        if(message.content == 'competition'){
-            const embed = new MessageEmbed()
-            .setTitle("Event Requirements")
-            .setColor("#eb4034")
-            .setDescription(`Event: **Draw it! - 4 Weeks Of Christmas**\n\n Any user who wishes to participate will:\n\n- Draw something original and send it to Aquasis as an image\n- Will then be sent to the staff team to review\n- At the end of the week (Friday), this event repeats. Whoever wins the previous week gets their art work on the server banner and a custom role until the next winner is picked\n\nRequirements:\n\n- Art/Drawing must be original and not rushed, don't make it look bad!\n- Any form of copied art will result in punishment!\n- **HAVE FUN!**`)
-            
-            return message.reply(embed)
-        }
-
         const dmEmbed = new MessageEmbed()
         .setTitle('New DM')
         .setColor('RANDOM')
@@ -82,7 +69,7 @@ module.exports = async (bot, message) => {
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 //                                                          REACTION ROLES
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
-    if(cmd === `${prefix}reactions`){
+    if(message.content == `${prefix}reactions`){
     const he_him = message.guild.roles.cache.get('869924102482325504')
     const she_her = message.guild.roles.cache.get('869923953261547560')
     const they_them = message.guild.roles.cache.get('869924173420572682')
