@@ -9,7 +9,7 @@ const Timeout = new Collection();
 const ms = require('ms');
 const fs = require('fs')
 const colors = require('../colors.json');
-const reactionRoles = fs.readFileSync('../modules/reactionRoles')
+const reaction = require('../modules/reaction')
 
 
 module.exports = async (bot, message) => {
@@ -90,7 +90,7 @@ module.exports = async (bot, message) => {
 
     }
 
-    reactionRoles(bot, message);
+    reaction(bot, message);
 
         
     }
