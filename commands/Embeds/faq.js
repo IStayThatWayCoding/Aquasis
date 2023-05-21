@@ -108,7 +108,7 @@ module.exports = {
         .setFooter(config.signature)
 
         const faq16embed = new Discord.MessageEmbed()
-        .setAuthor('FAQ 16', 'image.png')
+        .setAuthor('FAQ 16', 'https://i.imgur.com/8jVsXVa.png')
         .setColor(colors.RULESEMBED)
         .setDescription(faq16)
         .setFooter(config.signature)
