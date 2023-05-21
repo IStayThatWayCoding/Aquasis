@@ -81,6 +81,43 @@ module.exports = async (bot, message) => {
 
     let command = bot.commands.get(cmd);
     if (!command) command = bot.commands.get(bot.aliases.get(cmd));
+// ---------------------------------------------------------------------------------------------------------------------------------------------- //
+//                                                          REACTION ROLES
+// ---------------------------------------------------------------------------------------------------------------------------------------------- //
+    if(cmd === `${prefix}reactions`){
+    const he_him = message.guild.roles.cache.get('869924102482325504')
+    const she_her = message.guild.roles.cache.get('869923953261547560')
+    const they_them = message.guild.roles.cache.get('869924173420572682')
+    const other_ask_me = message.guild.roles.cache.get('869924328270090252')
+    const any_pronouns = message.guild.roles.cache.get('869924467143495732')
+    const events = message.guild.roles.cache.get('903766322008195146')
+    const shorts = message.guild.roles.cache.get('936105497994616832')
+
+    const channel = message.guild.channels.cache.get('903543603589173249')
+
+    const filter = (reaction, user) => user.id == message.author.id;
+
+    const embed = new Discord.MessageEmbed()
+        .setColor(colors.TRANSPARENT)
+        .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
+
+        const reactionMessage = await channel.channel.send(embed)
+
+        await reactionMessage.react('🐟')
+        await reactionMessage.react('🐬')
+        await reactionMessage.react('🐳')
+        await reactionMessage.react('🌊')
+        await reactionMessage.react('💧')
+        await reactionMessage.react('<a:oasisspin:1050143931775594576>')
+        await reactionMessage.react('🚨')
+        await reactionMessage.react('🤖')
+        await reactionMessage.react('❌')
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------- //
+// ---------------------------------------------------------------------------------------------------------------------------------------------- //
+// ---------------------------------------------------------------------------------------------------------------------------------------------- //
+
+    }
 
     if (command) {
         if(command.timeout) {
