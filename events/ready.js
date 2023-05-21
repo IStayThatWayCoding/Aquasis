@@ -41,7 +41,7 @@ module.exports = async (bot) => {
     memberCount(bot);
     rank_sort(bot);
     getTwitchFollowers(bot);
-    reactions(bot, reaction, user, message)
+    reactions(bot, user, message)
 
     Canvas.registerFont("./ulm_grotesk.ttf", { family: "grotesk" });
 
