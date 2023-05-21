@@ -133,7 +133,7 @@ if(message.content == `${prefix}reactions`){
                 if(reaction.message.channel.id === theChannel) {
                     if (reaction.emoji.name === '🐟'){
                         if (message.member.roles.cache.has(he_him)) {return message.channel.send("You already have this role!").then(m => m.delete({ timeout: 5000 }))}
-                        await reaction.message.guild.cache.get(user.id).roles.add(he_him).then(message.channel.send('Role added!').then(m => m.delete({ timeout: 5000 })))
+                        reaction.message.guild.cache.get(user.id).roles.add(he_him).then(message.channel.send('Role added!').then(m => m.delete({ timeout: 5000 })))
                     }
                 }
             })
@@ -148,7 +148,7 @@ if(message.content == `${prefix}reactions`){
                 if(reaction.message.channel.id === theChannel) {
                     if (reaction.emoji.name === '🐟'){
                         if (!message.member.roles.cache.has(he_him)) {return message.channel.send("You already don't have this role!").then(m => m.delete({ timeout: 5000 }))}
-                        await reaction.message.guild.cache.get(user.id).roles.remove(he_him).then(message.channel.send('Role removed!').then(m => m.delete({ timeout: 5000 })))
+                        reaction.message.guild.cache.get(user.id).roles.remove(he_him).then(message.channel.send('Role removed!').then(m => m.delete({ timeout: 5000 })))
                     }
                 }
             })
