@@ -7,7 +7,7 @@ const xpLimit = new Set();
 const config = require('../config.json');
 const colors = require('../colors.json');
 
-module.exports = async (message, bot) => {
+module.exports = async (message) => {
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 //                                                          REACTION ROLES
