@@ -30,7 +30,7 @@ if(message.content == `>reactions`){
     
         const reactionMessage = theChannel.send(embed)
     
-        reactionMessage.react('🐟')
+        message.reactionMessage.react('🐟')
         reactionMessage.react('🐬')
         reactionMessage.react('🐳')
         reactionMessage.react('🌊')
