@@ -3,12 +3,12 @@ const selfRoleReactions = {
         'messageId': "1109699803396456511",
         'exclusive': false,
         'roleIds': {
-            "he/him": '',
-            "she/her": '',
-            "they/them": '',
-            "other/ask me": '',
-            "any pronouns": '',
-            "pronouns in bio": '',
+            "he/him": '1️⃣',
+            "she/her": '2️⃣',
+            "they/them": '3️⃣',
+            "other/ask me": '4️⃣',
+            "any pronouns": '5️⃣',
+            "pronouns in bio": '6️⃣',
         }
 
     },
@@ -17,10 +17,10 @@ const selfRoleReactions = {
         'messageId': "1109699803396456511",
         "exlusive": true,
         "roleIds": {
-            "events": "",
-            "yt shorts": "",
-            "updates": "",
-            "xp-pause": ""
+            "events": "<a:oasisspin:1050143931775594576>",
+            "yt shorts": "🚨",
+            "updates": "🤖",
+            "xp-pause": "❌"
         }
     }
 }
