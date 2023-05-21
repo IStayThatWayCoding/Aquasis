@@ -108,7 +108,7 @@ if(message.content == `${prefix}reactions`){
         .setColor(colors.TRANSPARENT)
         .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
 
-        const reactionMessage = await theChannel.send(embed)
+        const reactionMessage = theChannel.send(embed)
 
         await reactionMessage.react('🐟')
         await reactionMessage.react('🐬')
