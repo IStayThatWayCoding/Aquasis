@@ -12,6 +12,8 @@ console.log('test')
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 //                                                          REACTION ROLES
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
+bot.on('message', async (message) => {
+
 if(message.content == `>reactions`){
     const he_him = message.guild.roles.cache.get('869924102482325504')
     const she_her = message.guild.roles.cache.get('869923953261547560')
@@ -23,7 +25,7 @@ if(message.content == `>reactions`){
     
     const theChannel = message.guild.channels.cache.get('903543603589173249')
     
-    bot.on('message', async (message) => {
+
         const embed = new MessageEmbed()
         .setColor(colors.TRANSPARENT)
         .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
@@ -39,7 +41,7 @@ if(message.content == `>reactions`){
         reactionMessage.react('🚨')
         reactionMessage.react('🤖')
         reactionMessage.react('❌')
-    })
+    }})
 
 }
 
@@ -48,4 +50,3 @@ if(message.content == `>reactions`){
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
-}
