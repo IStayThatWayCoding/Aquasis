@@ -90,8 +90,6 @@ module.exports = async (bot, message) => {
 
     }
 
-    reaction(bot, message);
-
         
     }
         
