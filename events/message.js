@@ -79,7 +79,7 @@ module.exports = async (bot, message) => {
     const events = message.guild.roles.cache.get('903766322008195146')
     const shorts = message.guild.roles.cache.get('936105497994616832')
 
-    const channel = message.guild.channels.cache.get('903543603589173249')
+    const theChannel = message.guild.channels.cache.get('903543603589173249')
 
     const filter = (reaction, user) => user.id == message.author.id;
 
@@ -87,7 +87,7 @@ module.exports = async (bot, message) => {
         .setColor(colors.TRANSPARENT)
         .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
 
-        const reactionMessage = await channel.channel.send(embed)
+        const reactionMessage = await theChannel.send(embed)
 
         await reactionMessage.react('🐟')
         await reactionMessage.react('🐬')
