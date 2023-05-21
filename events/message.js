@@ -7,7 +7,6 @@ const rank_xp = require('../modules/rank_xp');
 const balanceCheck = require('../modules/balanceCheck');
 const Timeout = new Collection();
 const ms = require('ms');
-const reactionRoles = require('../modules/reactionRoles');
 
 
 module.exports = async (bot, message) => {
