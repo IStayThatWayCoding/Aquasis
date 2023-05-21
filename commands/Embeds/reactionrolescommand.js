@@ -16,7 +16,7 @@ module.exports = {
 
         const embed = new Discord.MessageEmbed()
         .setColor(colors.TRANSPARENT)
-        .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
+        .setDescription('Due to the nature of how pronouns can be very diverse, Starfall Islands only offers certain pronoun roles to avoid too many cluttered roles. If your pronouns are different from these, you can select "Ask for Pronouns" or "Pronouns in Bio" so that other members can know your pronouns.\n\n1️⃣ ~ He/Him\n2️⃣ ~ She/Her\n3️⃣ ~ They/Them\n4️⃣ ~ Other/Ask Me\n5️⃣ ~ Any Pronouns\n6️⃣ ~ Pronouns in Bio\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
     
 
         message.channel.send({
