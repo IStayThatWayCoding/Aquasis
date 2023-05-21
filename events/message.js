@@ -68,9 +68,6 @@ module.exports = async (bot, message) => {
     let command = bot.commands.get(cmd);
     if (!command) command = bot.commands.get(bot.aliases.get(cmd));
 
-
-    }
-
     if (command) {
         if(command.timeout) {
 
@@ -87,6 +84,10 @@ module.exports = async (bot, message) => {
                 Timeout.delete(`${command.name}${message.author.id}`)
             }, command.timeout)
         }
+
+    }
+
+
 
         
     }
