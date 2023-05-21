@@ -110,15 +110,15 @@ if(message.content == `${prefix}reactions`){
 
         const reactionMessage = theChannel.send(embed)
 
-        await reactionMessage.react('🐟')
-        await reactionMessage.react('🐬')
-        await reactionMessage.react('🐳')
-        await reactionMessage.react('🌊')
-        await reactionMessage.react('💧')
-        await reactionMessage.react('<a:oasisspin:1050143931775594576>')
-        await reactionMessage.react('🚨')
-        await reactionMessage.react('🤖')
-        await reactionMessage.react('❌')
+        reactionMessage.react('🐟')
+        reactionMessage.react('🐬')
+        reactionMessage.react('🐳')
+        reactionMessage.react('🌊')
+        reactionMessage.react('💧')
+        reactionMessage.react('<a:oasisspin:1050143931775594576>')
+        reactionMessage.react('🚨')
+        reactionMessage.react('🤖')
+        reactionMessage.react('❌')
 
         // reactionMessage.awaitReactions(Filter, {max: 1, time: 30000, errors: ["time"]}.then(collected => {
 
