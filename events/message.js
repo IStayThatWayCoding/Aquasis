@@ -124,8 +124,8 @@ if(message.content == `${prefix}reactions`){
 
 
             bot.on('messageReactionAdd', async (reaction, user) => {
-                if(reaction.message.partial) await reaction.message.fetch();
-                if (reaction.partial) await reaction.fetch();
+                if(reaction.message.partial) reaction.message.fetch();
+                if (reaction.partial) reaction.fetch();
 
                 if (user.bot) return;
                 if (!reaction.message.guild) return;
@@ -138,9 +138,9 @@ if(message.content == `${prefix}reactions`){
                 }
             })
 
-            bot.on('messageReactionRemove', async(reaction, user) => {
-                if(reaction.message.partial) await reaction.message.fetch();
-                if (reaction.partial) await reaction.fetch();
+            bot.on('messageReactionRemove', (reaction, user) => {
+                if(reaction.message.partial) reaction.message.fetch();
+                if (reaction.partial) reaction.fetch();
 
                 if (user.bot) return;
                 if (!reaction.message.guild) return;
