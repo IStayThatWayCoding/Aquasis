@@ -105,7 +105,6 @@ module.exports = {
         .setAuthor('FAQ 15', 'https://i.imgur.com/mcNsSUp.jpg')
         .setColor(colors.RULESEMBED)
         .setDescription(faq15)
-        .setFooter(config.signature)
 
         const faq16embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 16', 'https://i.imgur.com/8jVsXVa.png')
