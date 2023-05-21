@@ -1,6 +1,6 @@
 const selfRoleReactions = require('../objects/selfRoleReactions')
 
-module.exports = async (bot, message, user, reaction) => {
+module.exports = async (bot, user, reaction) => {
     if (user.bot) return;
 
     if (reaction.partial) {
