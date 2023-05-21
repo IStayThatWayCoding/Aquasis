@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const fs = require('fs');
 const chalk = require('chalk');
-const message = require('./events/message');
+// const message = require('./events/message');
 
 require('dotenv').config()
 
