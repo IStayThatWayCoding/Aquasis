@@ -99,6 +99,49 @@ module.exports = async (bot, message) => {
         await reactionMessage.react('🤖')
         await reactionMessage.react('❌')
 
+        // reactionMessage.awaitReactions(Filter, {max: 1, time: 30000, errors: ["time"]}.then(collected => {
+
+
+            bot.on('messageReactionAdd', async (reaction, user) => {
+                if(reaction.message.partial) await reaction.message.fetch();
+                if (reaction.partial) await reaction.fetch();
+
+                if (user.bot) return;
+                if (!reaction.message.guild) return;
+
+                if(reaction.message.channel.id === theChannel) {
+                    if (reaction.emoji.name === '🐟'){
+                        if (message.member.roles.cache.has(he_him)) {return message.channel.send("You already have this role!").then(m => m.delete({ timeout: 5000 }))}
+                        await reaction.message.guild.cache.get(user.id).roles.add(he_him).then(message.channel.send('Role added!').then(m => m.delete({ timeout: 5000 })))
+                    }
+                }
+            })
+
+            bot.on('messageReactionRemove', async(reaction, user) => {
+                if(reaction.message.partial) await reaction.message.fetch();
+                if (reaction.partial) await reaction.fetch();
+
+                if (user.bot) return;
+                if (!reaction.message.guild) return;
+
+                if(reaction.message.channel.id === theChannel) {
+                    if (reaction.emoji.name === '🐟'){
+                        if (!message.member.roles.cache.has(he_him)) {return message.channel.send("You already don't have this role!").then(m => m.delete({ timeout: 5000 }))}
+                        await reaction.message.guild.cache.get(user.id).roles.remove(he_him).then(message.channel.send('Role removed!').then(m => m.delete({ timeout: 5000 })))
+                    }
+                }
+            })
+
+            // switch (reaction.emoji.name) {
+            //     case "🐟":
+            //         if (message.member.roles.cache.has(he_him)) {return message.channel.send("You already have this role!").then(m => m.delete({ timeout: 5000 }))}
+
+            //         message.member.roles.add(he_him).then(message.channel.send('Role added!').then(m => m.delete({ timeout: 5000 })))
+                    
+            //         break;
+            // }
+        }
+
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
@@ -125,4 +168,3 @@ module.exports = async (bot, message) => {
     }
         
 
-}
