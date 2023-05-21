@@ -24,7 +24,7 @@ module.exports = async (message, bot) => {
         .setColor(colors.TRANSPARENT)
         .setDescription('🐟 ~ He/Him\n🐬 ~ She/Her\n🐳 ~ They/Them\n🌊 ~ Other/Ask Me\n💧 ~ Any Pronouns\n\n<a:oasisspin:1050143931775594576> ~ Events\n🚨 ~ YT Shorts Ping\n\n🤖 ~ Updates about Aquasis (bot)\n❌ ~ React to pause XP gaining')
 
-        const reactionMessage = await message.channel.send(embed)
+        const reactionMessage = await channel.channel.send(embed)
 
         await reactionMessage.react('🐟')
         await reactionMessage.react('🐬')
