@@ -16,6 +16,8 @@ module.exports = async (message, bot) => {
     const events = message.guild.roles.cache.get('903766322008195146')
     const shorts = message.guild.roles.cache.get('936105497994616832')
 
+    const channel = message.guild.channels.cache.get('903543603589173249')
+
     const filter = (reaction, user) => user.id == message.author.id;
 
     const embed = new Discord.MessageEmbed()
