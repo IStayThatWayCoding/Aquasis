@@ -29,7 +29,7 @@ module.exports = {
             let faq13 = "**What does Oasis use for recording/editing/thumbnails?**\n\nRecording: OBS\nEditing: Adobe Premiere Pro, Sony Vegas, After Effects, and ReplayMod for Minecraft\nThumbnails: Photoshop, and CustomNPCs Mod for Minecraft"
             let faq14 = "**Who made the discord server icon and banner?**\n\nCurrent server icon: yuukun_\n\nCurrent server banner: Oasis\n\nCurrent <@1004762780508880986> pfp: <@362235929269895178>\n\n*Last Updated: May 17th, 2023*"
             let faq15 = "**I have a question relating to Oasis and Lifesteal...?**\n\nOasis made an FAQ for that in [this tweet](https://twitter.com/ItsOasisMC/status/1600916557651218476?t=Sqq15_E9b1WdqPSRV38qRA&s=19)\n\nNote: This mostly applies to Seasons 1 and 2. This may likely change in the future."
-
+            let faq16 = "**Why is Oasis also known as Swiftblade?**\n\nSwiftblade is the name of her OC (original character) and the name of her 2nd YouTube channel."
 
         const faq1embed = new Discord.MessageEmbed()
         .setAuthor('FAQ 1', 'https://i.imgur.com/ExVt149.jpg')
@@ -107,6 +107,12 @@ module.exports = {
         .setDescription(faq15)
         .setFooter(config.signature)
 
+        const faq16embed = new Discord.MessageEmbed()
+        .setAuthor('FAQ 16', 'image.png')
+        .setColor(colors.RULESEMBED)
+        .setDescription(faq16)
+        .setFooter(config.signature)
+
         
         message.channel.send({
             files: [
@@ -130,6 +136,7 @@ module.exports = {
             message.channel.send(faq13embed)
             message.channel.send(faq14embed)
             message.channel.send(faq15embed)
+            message.channel.send(faq16embed)
         }, 5000)
     
 
