@@ -8,7 +8,7 @@ const balanceCheck = require('../modules/balanceCheck');
 const Timeout = new Collection();
 const ms = require('ms');
 const colors = require('../colors.json');
-const reactionRoles = require('../modules/reactionRoles');
+const reactionRoles = require('../modules/reactionRoles')
 
 
 module.exports = async (bot, message) => {
