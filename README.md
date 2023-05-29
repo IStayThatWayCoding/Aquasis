@@ -1,4 +1,4 @@
-<a href="https://discord.gg/RtsZcajWCR"><img width="120" height="120" align="left" style="float: left" src="https://i.imgur.com/hlXmbLe.png"></a>
+<a href="https://discord.gg/RtsZcajWCR"><img width="120" height="120" align="left" style="float: left" src="https://i.imgur.com/XPmWTBT.png"></a>
 # Aquasis
 
 [![IStay's Resort](https://img.shields.io/discord/755968485854675065?color=%235865F2&logo=discord&logoColor=%23ffffff&style=for-the-badge)](https://discord.gg/RtsZcajWCR)
