@@ -3,7 +3,7 @@ module.exports = {
     aliases: [''],
     category: 'Admin',
     timeout: 5000,
-    description: 'Returns the bot's latency',
+    description: 'Returns the bots latency',
     usage: `>ping`,
     run: async (bot, message, args) => {
         if (!message.member.roles.cache.has('992191733238595644')) return message.channel.send("You must have the <@&992191733238595644> role to use this command.")
