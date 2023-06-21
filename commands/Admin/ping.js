@@ -6,7 +6,7 @@ module.exports = {
     description: 'Returns the bots latency',
     usage: `>ping`,
     run: async (bot, message, args) => {
-        if (!message.member.roles.cache.has('992191733238595644')) return message.channel.send("You must have the <@&992191733238595644> role to use this command.")
+        if (!message.member.roles.cache.has('934810508698214470')) return message.channel.send("You must have the <@&934810508698214470> role to use this command.")
 
         console.log(parseInt('0'));
 
