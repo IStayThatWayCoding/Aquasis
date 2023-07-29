@@ -46,6 +46,10 @@ module.exports = {
         let pack4_link2 = "http://pack4b.istaythatway.com"
         let pack4_thumbnail = "https://i.imgur.com/i23a4Gf.png"
 
+        let embedtitle = new Discord.MessageEmbed()
+        .setTitle("◈ Pack Releases ◈")
+        .setColor(colors.MUSIC)
+
         let pack1embed = new Discord.MessageEmbed()
         .setTitle(pack1_title)
         .setImage(pack1_thumbnail)
@@ -87,6 +91,7 @@ module.exports = {
         .addField('Download: (1.18)', pack4_link2)
         .setFooter(config.signature)
 
+        message.channel.send(embedtitle)
         message.channel.send(pack1embed)
         message.channel.send(pack2embed)
         message.channel.send(pack3embed)
