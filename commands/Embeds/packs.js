@@ -88,6 +88,9 @@ module.exports = {
         .setFooter(config.signature)
 
         message.channel.send(pack1embed)
+        message.channel.send(pack2embed)
+        message.channel.send(pack3embed)
+        message.channel.send(pack4embed)
 
     }
 }
