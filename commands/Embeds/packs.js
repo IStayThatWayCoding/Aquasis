@@ -71,8 +71,8 @@ module.exports = {
         .setFooter(config.signature)
 
         let pack3embed = new Discord.MessageEmbed()
-        .setTitle(pack1_title)
-        .setImage(pack1_thumbnail)
+        .setTitle(pack3_title)
+        .setImage(pack3_thumbnail)
         .setColor(colors.white)
         .addField('Version', pack3_version)
         .addField('Pack Maker', pack3_maker)
