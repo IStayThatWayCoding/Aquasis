@@ -50,7 +50,7 @@ module.exports = {
         const welcomeembed = new Discord.MessageEmbed()
         .setAuthor('Welcome!', 'https://i.imgur.com/z3Ppq8B.png')
         .setColor(colors.TRANSPARENT)
-        .setDescription("Welcome to **Oasis's (Swiftblade's)** Official Discord Server! Please ensure that you follow these simple rules.\n\nPlease keep this server to English & Spanish only. For other languages, use <#1109567902882992138> ONLY.")
+        .setDescription("Welcome to **Oasis's (Swiftblade's)** Official Discord Server! Please ensure that you follow these simple rules.\n\nPlease keep this server to English & Spanish only.")
 
         const rule1embed = new Discord.MessageEmbed()
         .setAuthor('Rule 1', 'https://i.imgur.com/ExVt149.jpg')
