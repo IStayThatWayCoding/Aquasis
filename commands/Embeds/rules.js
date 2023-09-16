@@ -15,7 +15,7 @@ module.exports = {
 
             let rule1 = "Be respectful. Do not argue with, harass or bully any member of the discord. Any form of racism, sexism, homophobia, transphobia, etc. (including derogatory terms) will get you punished."
             let rule2 = "Obey all staff members. Do not argue with staff - their decisions are final. If someone is breaking the rules, __ping a staff member or admin in the channel or dm a mod instead of mini-modding__. Refrain from troll/unnecessary pinging of staff."
-            let rule3 = "Swearing/cursing is strongly discouraged and may result in a warn/mute, especially if done excessively. This server is meant to be PG. Slurs of **__ANY KIND__** are prohibited and will result in immediate punishment."
+            let rule3 = "Swearing is allowed, but please do not use such language excessively towards another user, this is a safe space."
             let rule4 = "Do **__NOT__** post any inappropriate/NSFW content. This includes videos, images, links, emojis, profile pictures, usernames/nicknames, and discussion of overly-sexual content. Be mindful that there are younger members of the discord and that certain conversations may make people uncomfortable."
             let rule5 = "Do not dox or post any irl personal information about anyone, or post any unsafe links such as IP grabbers or scams. **(Doing so will get you immediately banned from the server.)**"
             let rule6 = "Do not spam in channels and don't spam/mass ping people unnecessarily, especially other creators. **Do not ping Oasis (Swiftblade)** for any reason either (this also includes trying to @/everyone and spam reacting). "
