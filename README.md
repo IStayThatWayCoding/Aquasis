@@ -1,4 +1,4 @@
-> [!DANGER]
+> [!WARNING]
 > This project is no longer maintained as it is outdated. An severely updated version of this project can be found [Here](https://github.com/IStayThatWayCoding/Sage)
 
 <a href="https://discord.gg/RtsZcajWCR"><img width="120" height="120" align="left" style="float: left" src="https://i.imgur.com/XPmWTBT.png"></a>
